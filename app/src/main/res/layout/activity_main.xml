@@ -32,7 +32,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:hint="Altura (ex: 1.70 m)"
-        android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -45,6 +44,7 @@
             android:id="@+id/alturaEDT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -59,7 +59,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:hint="Peso (ex: 70.5 kg)"
-        android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -72,6 +71,7 @@
             android:id="@+id/pesoEDT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
             android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -110,7 +110,8 @@
             <TextView
                 android:id="@+id/textView6"
                 style="@style/txtColuna1"
-                android:background="@android:color/darker_gray"
+                android:background="@color/gray_table"
+                android:padding="5dp"
                 android:text="IMC" />
 
             <TextView
@@ -118,42 +119,54 @@
                 style="@style/txtColuna1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/light_blue_table"
+                android:padding="5dp"
+                android:text="@string/menor_18_5" />
 
             <TextView
                 android:id="@+id/textView10"
                 style="@style/txtColuna1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/green_table"
+                android:padding="5dp"
+                android:text="18,5 - 24,9" />
 
             <TextView
                 android:id="@+id/textView11"
                 style="@style/txtColuna1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/yellow_table"
+                android:padding="5dp"
+                android:text="25 - 29,9" />
 
             <TextView
                 android:id="@+id/textView12"
                 style="@style/txtColuna1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/orange_table"
+                android:padding="5dp"
+                android:text="30 - 34,9" />
 
             <TextView
                 android:id="@+id/textView13"
                 style="@style/txtColuna1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/red_table"
+                android:padding="5dp"
+                android:text="35 - 39,9" />
 
             <TextView
                 android:id="@+id/textView14"
                 style="@style/txtColuna1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/purple_table"
+                android:padding="5dp"
+                android:text=">= 40" />
         </LinearLayout>
 
         <LinearLayout
@@ -166,7 +179,8 @@
                 style="@style/txtColuna2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/darker_gray"
+                android:background="@color/gray_table"
+                android:padding="5dp"
                 android:text="CLASSIFICAÇÃO" />
 
             <TextView
@@ -174,42 +188,54 @@
                 style="@style/txtColuna2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/light_blue_table"
+                android:padding="5dp"
+                android:text="Abaixo do peso" />
 
             <TextView
                 android:id="@+id/textView15"
                 style="@style/txtColuna2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/green_table"
+                android:padding="5dp"
+                android:text="Peso normal" />
 
             <TextView
                 android:id="@+id/textView16"
                 style="@style/txtColuna2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/yellow_table"
+                android:padding="5dp"
+                android:text="Sobrepeso" />
 
             <TextView
                 android:id="@+id/textView17"
                 style="@style/txtColuna2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/orange_table"
+                android:padding="5dp"
+                android:text="Obesidade Grau I" />
 
             <TextView
                 android:id="@+id/textView18"
                 style="@style/txtColuna2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/red_table"
+                android:padding="5dp"
+                android:text="Obesidade Grau II" />
 
             <TextView
                 android:id="@+id/textView19"
                 style="@style/txtColuna2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="@color/purple_table"
+                android:padding="5dp"
+                android:text="Obesidade Grau III" />
         </LinearLayout>
 
     </LinearLayout>

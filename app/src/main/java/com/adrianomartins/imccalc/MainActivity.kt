@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val altura = altura.toFloatOrNull()
         if (peso != null && altura != null) {
             val imc = peso / (altura * altura)
-            titleTXT.text = "SEU IMC É: %.2f".format(imc)
+            titleTXT.text = "SEU IMC É: %.1f".format(imc)
         }
     }
 }
